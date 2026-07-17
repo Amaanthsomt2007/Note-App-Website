@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes   |  To-Do List</title>
+    <link rel="stylesheet" href="notebook.css">
+      <script src="https://kit.fontawesome.com/cb08ec855e.js" crossorigin="anonymous"></script>
+      <script src="notebook.js" defer></script>
+</head>
+<body>
+    <header>
+           <div id="header">
+            <h1>To-Do List Form</h1>
+            </div>
+    </header>
+            
+          <nav>
+                   <div><a href="index.html"><i class="fa-solid fa-home"></i></a></div>
+                   <div class="current"><a href="to-do.html"><i class="fa-solid fa-list-check"></i></a></div>
+                   <div><a href="client_form.html"><i class="fa-solid fa-user-plus"></i></a></div>
+           </nav>
+ 
+   
+   
+    <form>
+        <div>
+        <label for="number_of_clients">Number of Client Messaged:</label>
+        <input type="number" placeholder="Enter Number" id="number_of_clients" required></div>
+        
+        <div class="radio-group">
+    <div class="radio-item">
+        <label for="Tiktok">TikTok</label>
+        <input type="radio" id="Tiktok" name="social_media" value="TikTok" required>
+    </div>
+
+    <div class="radio-item">
+        <label for="Instagram">Instagram</label>
+        <input type="radio" id="Instagram" name="social_media" value="Instagram" required>
+    </div>
+
+    <div class="radio-item">
+         <label for="Facebook">Facebook</label>
+         <input type="radio" id="Facebook" name="social_media" value="Facebook" required>
+    </div>
+
+    <div class="radio-item">
+        <label for="LinkedIn">LinkedIn</label>
+        <input type="radio" id="LinkedIn" name="social_media" value="LinkedIn" required>
+    </div>
+</div>
+     
+    <div>
+        <label for="social_media_username">Client's Social Media username:</label> 
+    <input type="text" id="social_media_username" placeholder="Enter Client's Username Here" required>
+    </div>
+    
+    <div>
+        <label for="client_phone">Client's Phone Number:</label>
+   <input type="tel" id="client_phone" pattern="[0-9]{11}" maxlength="11" placeholder="Enter phone number" required>
+   </div>
+
+   <button id="add_Todo">Submit</button>
+    </form>
+</body>
+</html>

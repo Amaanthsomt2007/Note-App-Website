@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes  | Client Form</title>
+     <link rel="stylesheet" href="notebook.css">
+     <script src="https://kit.fontawesome.com/cb08ec855e.js" crossorigin="anonymous"></script>
+     <script src="notebook.js" defer></script>
+</head>
+<body>
+      <header>
+           <div id="header">
+            <h1>Client Form</h1>
+            </div>
+      </header>
+            
+           <nav>
+                   <div><a href="index.html"><i class="fa-solid fa-home"></i></a></div>
+                   <div><a href="to-do.html"><i class="fa-solid fa-list-check"></i></a></div>
+                   <div class="current"><a href="client_form.html"><i class="fa-solid fa-user-plus"></i></a></div>
+           </nav>
+
+
+ <form>
+     <div>
+         <label for="potential_client">New Client:</label>
+     <input type="text" name="potential_client" id="potential_client" required>
+     </div>
+     
+     <div>
+         <label for="client_number">Client Number:</label>
+     <input type="number" name="client_number" id="client_number" required>
+     </div>
+     
+     <div>
+         <label for="comment_about_client">Write About This Client:</label>
+     <textarea id="comment_about_client" name="comment_about_client" placeholder="write about client" rows="10" maxlength="200" required></textarea>
+     </div>
+     
+     <div class="radio-group">
+    <div class="radio-item">
+        <label for="Tiktok">TikTok</label>
+        <input type="radio" id="Tiktok" name="social_media" value="TikTok" required>
+    </div>
+
+    <div class="radio-item">
+        <label for="Instagram">Instagram</label>
+        <input type="radio" id="Instagram" name="social_media" value="Instagram" required>
+    </div>
+
+    <div class="radio-item">
+         <label for="Facebook">Facebook</label>
+         <input type="radio" id="Facebook" name="social_media" value="Facebook" required>
+    </div>
+
+    <div class="radio-item">
+        <label for="LinkedIn">LinkedIn</label>
+        <input type="radio" id="LinkedIn" name="social_media" value="LinkedIn" required>
+    </div>
+</div>
+     
+
+         <label for="client_response">Client Response/Feedback:</label>
+     <textarea id="client_response" name="client_response" rows="5" maxlength="50"placeholder="write here" required></textarea>
+     </div>
+     
+     
+     <div class="radio-group">
+         <div class="radio-item">
+         <label for="hired">Hired</label>
+     <input type="radio" name="rejected_hired" id="hired" value="hired" required>
+     </div>
+    
+    <div class="radio-item">
+     <label for="rejected">Rejected</label>
+     <input type="radio" name="rejected_hired" id="rejected" value="rejected" required>
+     </div>
+     </div>
+ 
+     <button id="add_client">Submit</button>
+ </form>
+</body>
+</html>
